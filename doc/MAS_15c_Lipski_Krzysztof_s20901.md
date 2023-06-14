@@ -1,16 +1,16 @@
-# **Serwis łączący graczy „Omni-kom"**
+# Serwis łączący graczy „Omni-kom"
 
-# **Wstępny opis projektu**
+# Wstępny opis projektu
 
-## **Dziedzina problemowa**
+## Dziedzina problemowa
 
 Projekt portalu z grami został wymyślony przez grupę znajomych, chcących umożliwić sobie i graczom większej interakcji między sobą w kwestii grania oraz możliwość posiadania biblioteki gier, gdzie będą mogli śledzić postępy.
 
-## **Cel**
+## Cel
 
 Celem systemu jest umożliwienie graczom interakcji między sobą, dokonywanie zakupów wybranych gier oraz śledzenie postępów w grze.
 
-## **Zakres odpowiedzialności systemu**
+## Zakres odpowiedzialności systemu
 
 System powinien umożliwiać zarządzanie informacjami:
 
@@ -36,11 +36,11 @@ System powinien umożliwiać
    - Przeglądanie katalogu
    - Zakładanie konta
 
-## **Użytkownicy systemu**
+## Użytkownicy systemu
 
 Potencjalnymi użytkownikami systemu są gracze (członkowie systemu), niezarejestrowani użytkownicy (goście) oraz podsystem czasu.
 
-# **Wymagania użytkownika**
+# Wymagania użytkownika
 
 System miałby zastosowanie w ułatwieniu graczom dokonywania zakupów gier komputerowych, konsolowych i nie tylko. Użytkownicy mają dostęp do biblioteki gier, które posiadają. Mogą też zobaczyć szczegóły konkretnej gry, gdzie mają opcje na uruchomienie gry lub zmiana parametrów uruchomienia, np. dodatki do niej.
 
@@ -85,15 +85,23 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 
 ![](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Proj_ud.png)
 
-_Rysunek 1 - diagram przypadków użycia_
+*Rysunek 1 - diagram przypadków użycia*
 
 # Wymagania na system
 
-## Wymagania funkcjonalne — diagram klas
+## Wymagania funkcjonalne - analityczny diagram klas
 
 <img title="" src="file:///C:/Users/klips/Documents/PJATK/6%20-%20Letni/MAS/Omni-kom/doc/Diagramy/MAS%20-%20Proj_CLD_analityczny.png" alt="" data-align="inline"> 
 
 *Rysunek 2 - analityczny diagram klas*
+
+## Opis struktury systemu - projektowy diagram klas
+
+![MAS - Proj_CLD_projektowy.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Proj_CLD_projektowy.png)
+
+*Rysunek 3 - projektowy diagram klas*
+
+Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Scenariusz przypadku użycia „Kupowanie gry"
 
@@ -126,23 +134,29 @@ _Rysunek 1 - diagram przypadków użycia_
 10. System zapisuje informacje o transakcji
 11. System dodaje produkt do biblioteki gracza lub desygnowanego znajomego
 12. System pokazuje informację o potwierdzeniu zakupu
-13. Przypadek kończy się
+13. Przypadek kończy się 
 
- 
+## Diagram aktywności dla przypadku użycia "Kupowanie gry"
 
-## **Diagram sekwencji dla przypadku użycia „Kupowanie gry"**
+![MAS - Proj_UD_diagram_aktywnosci.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Proj_UD_diagram_aktywnosci.png)
 
-### Przebieg domyślny — użytkownik kupuje produkt dla siebie
+*Rysunek 4 - diagram aktywności dla przypadku użycia "Kupowanie gry"*
 
-**Diagram aktywności dla przypadku użycia „Kupowanie gry"**
+## Diagram stanu dla klasy "Gra"
 
-![](RackMultipart20230614-1-iwagbc_html_e4eb52edea41eb44.png)
+![MAS - Proj_SM_diagram_stanu.png](C:\Users\klips\Downloads\MAS%20-%20Proj_SM_diagram_stanu.png)
 
-**Diagram stanu dla klasy Game**
+*Rysunek 5 - diagram aktywności dla przypadku użycia "Kupowanie gry"*
 
-![](RackMultipart20230614-1-iwagbc_html_bc365968fdb8a34.png)
+## Diagramy sekwencji dla przypadku użycia „Kupowanie gry"
 
-## **Wymagania niefunkcjonalne – miary**
+### Przebieg domyślny
+
+![MAS - Rysunek 6 - diagram sekwencji da przypadku użycia _Kupowanie gry_.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Rysunek%206%20-%20diagram%20sekwencji%20da%20przypadku%20użycia%20_Kupowanie%20gry_.png)
+
+*Rysunek 6 - diagram sekwencji da przypadku użycia "Kupowanie gry"* 
+
+## Wymagania niefunkcjonalne – miary
 
 | **Ograniczenie**        | **Miara**                                                  |
 | ----------------------- | ---------------------------------------------------------- |
