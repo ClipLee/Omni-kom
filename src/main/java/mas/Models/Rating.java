@@ -2,8 +2,10 @@ package mas.Models;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class Rating {
+public class Rating implements Serializable {
     private int id;
     private enum ProductRating {
         Star_1, Star_2, Star_3, Star_4, Star_5

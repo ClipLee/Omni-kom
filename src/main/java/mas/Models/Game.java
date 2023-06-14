@@ -1,5 +1,6 @@
 package mas.Models;
 
+import java.io.Serializable;
 import java.util.List;
 
 import lombok.Data;
@@ -7,7 +8,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Game extends Product{
+public class Game extends Product implements Serializable {
     
     protected List<Genre> genres;
     protected List<DLC> dlcs;

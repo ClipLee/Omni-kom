@@ -1,11 +1,12 @@
 package mas.Models;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 import lombok.Data;
 
 @Data
-public class Transaction {
+public class Transaction implements Serializable {
     private int id ;
     private LocalDate date;
     

@@ -1,5 +1,6 @@
 package mas.Models;
 
+import java.io.Serializable;
 import java.util.List;
 
 import lombok.Data;
@@ -7,7 +8,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Member extends User {
+public class Member extends User implements Serializable {
     
     private int id;
     private String name, surname, email;

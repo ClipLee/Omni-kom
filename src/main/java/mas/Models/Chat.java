@@ -1,11 +1,12 @@
 package mas.Models;
 
+import java.io.Serializable;
 import java.util.List;
 
 import lombok.Data;
 
 @Data
-public class Chat {
+public class Chat implements Serializable {
     private int id;
     private String title;
     private Member host;

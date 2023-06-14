@@ -1,11 +1,12 @@
 package mas.Models;
 
+import java.io.Serializable;
 import java.util.List;
 
 import lombok.Data;
 
 @Data
-public abstract class Product{
+public abstract class Product implements Serializable {
     protected int id;
     protected String title, description;
     protected double price;
@@ -14,6 +15,9 @@ public abstract class Product{
     protected List<String> tags;
     protected List<Image> screenShots;
     protected List<Achievement> achievements;
+
+    //for Lombok
+    public Product(){}
 
     public Product(int id, String title, String description, double price, AgeRating ageRating, List<String> tags,
             List<Image> screenShots, List<Achievement> achievements) {

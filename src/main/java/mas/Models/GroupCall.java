@@ -1,11 +1,12 @@
 package mas.Models;
 
+import java.io.Serializable;
 import java.util.List;
 
 import lombok.Data;
 
 @Data
-public class GroupCall {
+public class GroupCall implements Serializable {
     private int id;
     private List<Member> members;
 
