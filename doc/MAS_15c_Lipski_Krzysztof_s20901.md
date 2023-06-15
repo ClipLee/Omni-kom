@@ -83,7 +83,7 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 - Utwórz nowe konto (Gość)
 - Zaloguj się (Gość)
 
-![](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Proj_ud.png)
+![](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%201%20-%20diagram%20przypadków%20użycia.png)
 
 *Rysunek 1 - diagram przypadków użycia*
 
@@ -91,13 +91,13 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 
 ## Wymagania funkcjonalne - analityczny diagram klas
 
-<img title="" src="file:///C:/Users/klips/Documents/PJATK/6%20-%20Letni/MAS/Omni-kom/doc/Diagramy/MAS%20-%20Proj_CLD_analityczny.png" alt="" data-align="inline"> 
+<img title="" src="file:///C:/Users/klips/Documents/PJATK/6 - Letni/MAS/Omni-kom/doc/Diagramy/Rysunek 2 - analityczny diagram klas.png" alt="" data-align="inline"> 
 
 *Rysunek 2 - analityczny diagram klas*
 
 ## Opis struktury systemu - projektowy diagram klas
 
-![MAS - Proj_CLD_projektowy.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Proj_CLD_projektowy.png)
+![MAS - Proj_CLD_projektowy.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%203%20-%20projektowy%20diagram%20klas.png)
 
 *Rysunek 3 - projektowy diagram klas*
 
@@ -138,13 +138,13 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Diagram aktywności dla przypadku użycia "Kupowanie gry"
 
-![MAS - Proj_UD_diagram_aktywnosci.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Proj_UD_diagram_aktywnosci.png)
+![MAS - Proj_UD_diagram_aktywnosci.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%204%20-%20diagram%20aktywności%20dla%20przypadku%20użycia%20Kupowanie%20gry.png)
 
 *Rysunek 4 - diagram aktywności dla przypadku użycia "Kupowanie gry"*
 
 ## Diagram stanu dla klasy "Gra"
 
-![MAS - Proj_SM_diagram_stanu.png](C:\Users\klips\Downloads\MAS%20-%20Proj_SM_diagram_stanu.png)
+![MAS - Proj_SM_diagram_stanu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%205%20-%20diagram%20aktywności%20dla%20przypadku%20użycia%20Kupowanie%20gry.png)
 
 *Rysunek 5 - diagram aktywności dla przypadku użycia "Kupowanie gry"*
 
@@ -189,3 +189,17 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 # Projekt GUI
 
 # Omówienie decyzji projektowych
+
+## Wybrane technologie
+
+Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z przedłużonym wsparciem do 2029 roku.
+
+- Zapewnienie trwałości jest realizowane przy użyciu serializacji języka Java do plików `.dat`, za pomocą interfejsu Serializable.
+
+- Pliki `.dat` to pliki binarne, zawierające dane zserializowane w formacie binarnym.
+
+- Wczytywanie danych z plików `.dat` odbywa się przy użyciu strumieni wejściowych.
+
+- Zapisywanie danych do plików `.dat` odbywa się przy użyciu strumieni wyjściowych.
+
+- GUI zostało zrealizowane za pomocą widget toolkitu Swing.
