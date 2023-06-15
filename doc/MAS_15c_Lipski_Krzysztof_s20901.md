@@ -188,6 +188,28 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 # Projekt GUI
 
+![MAS Projekt - Rysunek 7 - Karta produktu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%207%20-%20Karta%20produktu.png)
+
+*Rysunek 7 - Karta produktu* 
+
+
+
+![Rysunek 7a - Karta produktu z komunikatem.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%207a%20-%20Karta%20produktu%20z%20komunikatem.png)
+
+*Rysunek 7a - Karta produktu z komunikatem*
+
+
+
+![Rysunek 8 - Karta kupowania gry.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%208%20-%20Karta%20kupowania%20gry.png)
+
+*Rysunek 8 - Karta kupowania gry*
+
+
+
+
+
+ 
+
 # Omówienie decyzji projektowych
 
 ## Wybrane technologie
