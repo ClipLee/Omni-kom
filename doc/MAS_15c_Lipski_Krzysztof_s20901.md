@@ -193,25 +193,17 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 *Rysunek 7 - Karta produktu* 
 
-
-
 ![Rysunek 7a - Karta produktu z komunikatem.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%207a%20-%20Karta%20produktu%20z%20komunikatem.png)
 
 *Rysunek 7a - Karta produktu z komunikatem*
-
-
 
 ![Rysunek 8 - Karta kupowania gry.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%208%20-%20Karta%20kupowania%20gry.png)
 
 *Rysunek 8 - Karta kupowania gry*
 
-
-
 ![Rysunek 8a - Karta prezentowania gry.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%208a%20-%20Karta%20prezentowania%20gry.png)
 
 *Rysunek 8a - Karta prezentowania gry*
-
-
 
 ![Rysunek 9 - Karta potwierdzenia zakupu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%209%20-%20Karta%20potwierdzenia%20zakupu.png)
 
@@ -224,11 +216,13 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z przedłużonym wsparciem do 2029 roku.
 
 - Zapewnienie trwałości jest realizowane przy użyciu serializacji języka Java do plików `.dat`, za pomocą interfejsu Serializable.
-
-- Pliki `.dat` to pliki binarne, zawierające dane zserializowane w formacie binarnym.
-
-- Wczytywanie danych z plików `.dat` odbywa się przy użyciu strumieni wejściowych.
-
-- Zapisywanie danych do plików `.dat` odbywa się przy użyciu strumieni wyjściowych.
+  
+  - Pliki `.dat` to pliki binarne, zawierające dane zserializowane w formacie binarnym.
+  
+  - Wczytywanie danych z plików `.dat` odbywa się przy użyciu strumieni wejściowych.
+  
+  - Zapisywanie danych do plików `.dat` odbywa się przy użyciu strumieni wyjściowych.
 
 - GUI zostało zrealizowane za pomocą widget toolkitu Swing.
+
+- 
