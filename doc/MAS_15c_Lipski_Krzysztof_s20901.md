@@ -119,7 +119,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
       2. System przeprowadza weryfikację wieku
       3. Docelowy znajomy jest zbyt młody
          1. System wyświetla informację o grze dla starszych osób
-            1. Powrót do punktu 4.
+         2. Powrót do punktu 4.
       4. Przejście do punktu 7.
    2. Gracz wybiera opcję zakupu „dla siebie"
       1. System przeprowadza weryfikację wieku
@@ -150,12 +150,13 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Diagramy sekwencji dla przypadku użycia „Kupowanie gry"
 
-### Przebieg domyślny
+### Przebieg domyślny - gracz kupuje grę dla siebie
 
-![MAS - Rysunek 6 - diagram sekwencji da przypadku użycia _Kupowanie gry_.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Rysunek%206%20-%20diagram%20sekwencji%20da%20przypadku%20użycia%20_Kupowanie%20gry_.png)
+![MAS - Rysunek 6 - diagram sekwencji da przypadku użycia _Kupowanie gry_.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%206.1%20-%20diagram%20sekwencji.png)
 
-<figcaption>Image caption</figcaption>
 *Rysunek 6 - diagram sekwencji da przypadku użycia "Kupowanie gry"*
+
+### Przebieg alternatywny - gracz kupuje grę jako prezent
 
 ## Wymagania niefunkcjonalne – miary
 
@@ -224,5 +225,3 @@ Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z prz
   - Zapisywanie danych do plików `.dat` odbywa się przy użyciu strumieni wyjściowych.
 
 - GUI zostało zrealizowane za pomocą widget toolkitu Swing.
-
-- 
