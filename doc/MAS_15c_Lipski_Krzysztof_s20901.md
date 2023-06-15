@@ -225,3 +225,5 @@ Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z prz
   - Zapisywanie danych do plików `.dat` odbywa się przy użyciu strumieni wyjściowych.
 
 - GUI zostało zrealizowane za pomocą widget toolkitu Swing.
+
+- Wykorzystana została biblioteka Lombok
