@@ -154,7 +154,8 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ![MAS - Rysunek 6 - diagram sekwencji da przypadku użycia _Kupowanie gry_.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\MAS%20-%20Rysunek%206%20-%20diagram%20sekwencji%20da%20przypadku%20użycia%20_Kupowanie%20gry_.png)
 
-*Rysunek 6 - diagram sekwencji da przypadku użycia "Kupowanie gry"* 
+<figcaption>Image caption</figcaption>
+*Rysunek 6 - diagram sekwencji da przypadku użycia "Kupowanie gry"*
 
 ## Wymagania niefunkcjonalne – miary
 
@@ -206,9 +207,15 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 
 
+![Rysunek 8a - Karta prezentowania gry.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%208a%20-%20Karta%20prezentowania%20gry.png)
+
+*Rysunek 8a - Karta prezentowania gry*
 
 
- 
+
+![Rysunek 9 - Karta potwierdzenia zakupu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%209%20-%20Karta%20potwierdzenia%20zakupu.png)
+
+*Rysunek 9 - Karta potwierdzenia zakupu*
 
 # Omówienie decyzji projektowych
 
