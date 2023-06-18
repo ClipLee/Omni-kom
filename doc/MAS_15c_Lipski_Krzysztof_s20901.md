@@ -160,13 +160,13 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Wymagania niefunkcjonalne – miary
 
-| **Ograniczenie**        | **Miara**                                                  |
-| ----------------------- | ---------------------------------------------------------- |
-| **Wydajność**           | Szybkość działania platformy i jej stabilność              |
-| **Bezpieczeństwo**      | Zapewnienie bezpieczeństwa użytkowników i ich danych       |
-| **Łatwość użytkowania** | Intuicyjny interfejs                                       |
-| **Dostępność**          | Dostępność platformy dla użytkowników z różnych regionów   |
-| **Skalowalność**        | Zdolność platformy do obsługi rosnącej liczby użytkowników |
+| **Ograniczenie**        | **Miara**                                                                                                                                                                                                                                                             |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Wydajność**           | Ekrany ładują się w czasie mniejszym niż 3 sekundy, przetwarzanie zakupów i płatności trwa mniej niż 5 sekund (nie wliczając czasu pośredników). Obsługa 400 żądań na sekundę bez kolejki dłuższej niż 50.                                                            |
+| **Bezpieczeństwo**      | Zapewnienie bezpieczeństwa użytkowników i ich danych poprzez rozlokwanie ich na kilku serwerach (min. 3) z szyfrowaniem ich za pomocą SHA-256 lub mocniejszego.<br/>Utrzymywanie zaktualizwaonego systemu i elementów w nim zawartych. (Maksymalnie 1 wersja do tyłu) |
+| **Łatwość użytkowania** | Intuicyjny interfejs zapewniający łatwą dostępność do wszystkich funkcji. Kompatybilność z funkcjami text-to-speech w przeglądarkach. Aktualne FAQ odpowiadające na często zadawane pytania. 7/10 zadowolonych użytkowników.                                          |
+| **Dostępność**          | Dostępność platformy dla użytkowników z całej Europy w 5 językach (polski, angielski, niemiecki, ukraiński, francuski). Dostępność serwisu 24 godziny na dobę, przez 7 dni w tygodniu w ciągu całego roku (Nie licząc przerw serwisowych).                            |
+| **Skalowalność**        | Zdolność platformy do obsługi rosnącej liczby użytkowników, możliwość przechowywania danych ponad 1 miliona użytkowników. Biblioteka gier będąca w stanie przechowywać ponad 50 000 tytułów gier.                                                                     |
 
 # Opis przyszłej ewolucji systemu
 
