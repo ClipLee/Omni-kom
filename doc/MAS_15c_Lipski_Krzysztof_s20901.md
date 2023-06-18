@@ -1,5 +1,7 @@
 # Serwis łączący graczy „Omni-kom"
 
+> Krzysztof Lipski s20901
+
 # Wstępny opis projektu
 
 ## Dziedzina problemowa
