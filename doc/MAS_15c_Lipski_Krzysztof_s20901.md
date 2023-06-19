@@ -148,7 +148,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ![MAS - Proj_SM_diagram_stanu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%205%20-%20diagram%20aktywności%20dla%20przypadku%20użycia%20Kupowanie%20gry.png)
 
-*Rysunek 5 - diagram aktywności dla przypadku użycia "Kupowanie gry"*
+*Rysunek 5 - diagram stanu dla przypadku użycia "Kupowanie gry"*
 
 ## Diagramy sekwencji dla przypadku użycia „Kupowanie gry"
 
