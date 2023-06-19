@@ -20,9 +20,8 @@ public class Main {
 
         SwingUtilities.invokeLater(new MainWindow());
 
-//        writeToFiles();
+        // writeToFiles();
     }
-
 
     /**
      *
@@ -30,7 +29,7 @@ public class Main {
      */
     private static void readFromFiles() {
         try (FileInputStream fis = new FileInputStream("MemberData.dat");
-             ObjectInputStream ois = new ObjectInputStream(fis)) {
+                ObjectInputStream ois = new ObjectInputStream(fis)) {
             userList = (List<Member>) ois.readObject();
         } catch (FileNotFoundException e) {
             System.out.println("No previous member data, creating new test member.");
@@ -45,7 +44,7 @@ public class Main {
      */
     public static void writeToFiles() {
         System.out.println("Saving system data before the exit");
-        try (FileOutputStream fos = new FileOutputStream("MemberData.dat")){
+        try (FileOutputStream fos = new FileOutputStream("MemberData.dat")) {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(userList);
         } catch (IOException e) {
