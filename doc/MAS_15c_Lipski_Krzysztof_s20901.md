@@ -93,9 +93,47 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 
 ## Wymagania funkcjonalne - analityczny diagram klas
 
-<img title="" src="file:///C:/Users/klips/Documents/PJATK/6 - Letni/MAS/Omni-kom/doc/Diagramy/Rysunek 2 - analityczny diagram klas.png" alt="" data-align="inline"> 
+<img title="" src="file:///C:/Users/klips/Documents/PJATK/6 - Letni/MAS/Omni-kom/doc/Diagramy/Rysunek 2.1 - analityczny diagram klas oznaczony.png" alt="" data-align="inline"> 
 
 *Rysunek 2 - analityczny diagram klas*
+
+#### Legenda
+
+1. Atrybut złożony - w implementacji typu `Image` 
+
+2. Atrybut opcjonalny - `friends: [0..*]`; `achievements [0..*]`
+
+3. Atrybut klasowy - `maxMembers = 49`
+
+4. Atrybut pochodny - `rarity`; `age`
+
+---
+
+5. Metoda klasowa - `countRarity()`, `viewAchievements()`; `viewLibrary()`
+
+6. Metoda przesłonięta - `buy`
+
+7. Asocjacja z atrybutem - pomiędzy Member, a *Product*: klasa Transaction
+
+8. Kompozycja
+
+9. Klasa abstrakcyjna - klasy *User* i *Product*
+
+---
+
+10. Dziedziczenie dynamiczne - po klasie *User*
+
+11. Ograniczenie atrybutu - `ageRating`
+
+12. Ograniczenie unique - `id` 
+
+13. Ograniczenie ordered - `members`
+
+14. Ograniczenie bag - pomiędzy Member, a *Product*: klasa Transaction
+
+15. Ograniczenie własne - `ageRating`
+
+ 
 
 ## Opis struktury systemu - projektowy diagram klas
 
