@@ -125,7 +125,7 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 
 11. Ograniczenie atrybutu - `ageRating`
 
-12. Ograniczenie unique - `id` 
+12. Ograniczenie unique - `id`
 
 13. Ograniczenie ordered - `members`
 
