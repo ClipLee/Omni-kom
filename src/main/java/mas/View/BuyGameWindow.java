@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class BuyGameWindow extends JFrame implements Runnable{
+public class BuyGameWindow extends JFrame implements Runnable {
     private JPanel panel;
     private JCheckBox termsCheckBox;
     private JButton buyButton;
@@ -20,7 +20,7 @@ public class BuyGameWindow extends JFrame implements Runnable{
     private Game game;
     private Member member, selectedFriend;
 
-    public BuyGameWindow(Game game, Member member){
+    public BuyGameWindow(Game game, Member member) {
         this.game = game;
         this.member = member;
         this.add(panel);
@@ -30,20 +30,21 @@ public class BuyGameWindow extends JFrame implements Runnable{
         this.setLocationRelativeTo(null);
         buyButton.addActionListener(actionEvent -> {
             if (termsCheckBox.isSelected()) {
-                this.game.buy();
+                this.game.buy(member);
+                JOptionPane.showMessageDialog(this, "Success, game has been added to your library", "Success!", JOptionPane.INFORMATION_MESSAGE);
                 Utils.closeWindow(this);
-            }
-            else JOptionPane.showMessageDialog(this, "You need to agree to terms of service", "Warning", JOptionPane.WARNING_MESSAGE);
+            } else
+                JOptionPane.showMessageDialog(this, "You need to agree to terms of service", "Warning", JOptionPane.WARNING_MESSAGE);
         });
     }
 
     private void createUIComponents() {
-            if (member.getFriends().isEmpty()) throw new NullPointerException();
-            this.friendList = new JList(member.getFriends().toArray());
-            this.friendList.addListSelectionListener(e->{
-                JList source = (JList) e.getSource();
-                selectedFriend = (Member) source.getSelectedValue();
-            });
+        if (member.getFriends().isEmpty()) throw new NullPointerException();
+        this.friendList = new JList(member.getFriends().toArray());
+        this.friendList.addListSelectionListener(e -> {
+            JList source = (JList) e.getSource();
+            selectedFriend = (Member) source.getSelectedValue();
+        });
 
     }
 

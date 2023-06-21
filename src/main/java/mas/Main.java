@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Main {
 
-
+    //TODO: metoda przeciążona,przesłonięta, atrybut klasowy, GUI
 
     public static List<Member> userList = new ArrayList<>();
     public static List<Product> productList = new ArrayList<>();

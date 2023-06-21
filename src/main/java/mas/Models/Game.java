@@ -23,8 +23,8 @@ public class Game extends Product implements Serializable {
     void play(){}
 
     @Override
-    public void buy() {
-
+    public void buy(Member member) {
+        Transaction.makeTransaction(member, this);
     }
 
     @Override

@@ -37,9 +37,10 @@ public class GameWindow extends JFrame implements Runnable {
             String message = this.game.getTitle() + ", price: " + this.game.getPrice() + "\n Do you want to buy this game?";
             Object[] choices = new Object[]{"Buy", "Cancel"};
             int i = JOptionPane.showOptionDialog(this, new Object[]{message, terms}, "Buy the game", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, choices, choices[1]);
-            if (terms.isSelected() && i == 0)
-                this.game.buy();
-            else if (i == 0)
+            if (terms.isSelected() && i == 0) {
+                this.game.buy(member);
+                JOptionPane.showMessageDialog(this, "Success, game has been added to your library", "Success!", JOptionPane.INFORMATION_MESSAGE);
+            } else if (i == 0)
                 JOptionPane.showMessageDialog(this, "You need to agree to terms of service", "Warning", JOptionPane.WARNING_MESSAGE);
         });
         giftGameButton.addActionListener(actionEvent -> {

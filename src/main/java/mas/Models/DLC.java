@@ -21,7 +21,7 @@ public class DLC extends Product implements Serializable{
     void disable(){}
 
     @Override
-    void buy() {
+    void buy(Member member) {
 
     }
 }
