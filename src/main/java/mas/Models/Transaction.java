@@ -28,4 +28,9 @@ public class Transaction implements Serializable {
     void showHistory(){}
     void showTransaction(){}
     void requestRefund(){}
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }
