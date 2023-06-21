@@ -40,6 +40,7 @@ public class Main {
             System.out.println("No previous member data, creating new test member.");
             userList.add(new Member(0, "test", "user", "testuser@example.com", LocalDate.of(2001, 12, 3)));
             userList.add(new Member(1, "younger", "user", "testuser@example.com", LocalDate.of(2008, 1, 5)));
+            userList.add(new Member(2, "1999", "user", "testuser@example.com", LocalDate.of(1999, 2, 23)));
             userList.get(1).getFriends().add(userList.get(0));
             b = true;
         } catch (IOException | ClassNotFoundException e) {
@@ -51,21 +52,21 @@ public class Main {
             productList = (List<Product>) ois.readObject();
         } catch (FileNotFoundException e) {
             System.out.println("No previous product data, creating new test product.");
-            productList.add(new Game(0, "Test game 1", "Test game description",
+            productList.add(new Game(0, "Test game 1", "This game has PEGI 7 and costs 100 credits",
                     100.0,
                     AgeRating.PEGI7,
                     new ArrayList<>(),
                     new ArrayList<>(),
                     new ArrayList<>(),
                     new ArrayList<>()));
-            productList.add(new Game(1, "Test game 2", "See, the description have changed",
+            productList.add(new Game(1, "Test game 2", "See, the description have changed. This one is PEGI 16 AND its price is 80",
                     80.0,
                     AgeRating.PEGI16,
                     new ArrayList<>(),
                     new ArrayList<>(),
                     new ArrayList<>(),
                     new ArrayList<>()));
-            productList.add(new Game(2, "Test game 3", "Yet another game",
+            productList.add(new Game(2, "Test game 3", "Yet another game with PEGI 18 and price of 120",
                     120.0,
                     AgeRating.PEGI18,
                     new ArrayList<>(),

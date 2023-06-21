@@ -27,8 +27,8 @@ public class Achievement implements Serializable {
         achievings = new ArrayList<>();
     }
 
-    void countRarity(){}
-    void viewAchievements(){}
+    void countRarity(){} //TODO czy tu nie powinna być metoda klasowa (static)?
+    void viewAchievements(){} //TODO czy tu nie powinna być metoda klasowa (static)?
     void show(){}
     void hide(){}
 }
