@@ -1,6 +1,7 @@
 package mas.View;
 
 import mas.Main;
+import mas.Models.Guest;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -18,6 +19,8 @@ public class WelcomeWindow extends JFrame implements Runnable{
     public WelcomeWindow(){
         this.add(panel);
 
+        Guest guest = new Guest();
+
         this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         this.addWindowListener(new WindowAdapter() {
             @Override
@@ -29,18 +32,8 @@ public class WelcomeWindow extends JFrame implements Runnable{
         });
         this.setVisible(true);
         this.setSize(350,200);
-        loginButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                SwingUtilities.invokeLater(new LoginWindow());
-            }
-        });
-        registerButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                SwingUtilities.invokeLater(new RegisterWindow());
-            }
-        });
+        loginButton.addActionListener(actionEvent -> guest.login());
+        registerButton.addActionListener(actionEvent -> guest.register());
     }
 
     @Override
