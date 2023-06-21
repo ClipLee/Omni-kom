@@ -264,7 +264,21 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
   
   - Zapisywanie danych do plików `.dat` odbywa się przy użyciu strumieni wyjściowych.
 
-- **GUI**
+- **GUI**:
    Interfejs graficzny (GUI) został zrealizowany za pomocą toolkitu Swing
 
-- Do edycji //TODO: czego? Wykorzystana została biblioteka Lombok
+- **Lombok**:
+  Do obługi metod dostępu do atrybutów get, set, toString została wykorzystana została biblioteka Lombok
+
+- Atrybuty pochodne są wyliczane w momencie ich wywołania
+
+- Asocjacja z atrybutem została zrealizowana z użyciem klasy pośredniczącej i dwóch 
+  asocjacji 1..*
+
+- Asocjacje binarne zaimplementowane za pomoca kolekcji
+
+- Ograniczenie własne zrealizowane za pomocą enumów
+
+- Dziedziczeni  dynamiczne zrealizowane poprzez "klonowanie", w klasie Member specjalny konstruktor przyjmujący obiekt Guest
+
+- Ograniczenie ordered kolejność member w Group call jest ustalana poprzez Member id
