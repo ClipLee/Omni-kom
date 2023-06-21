@@ -21,4 +21,14 @@ public class Game extends Product implements Serializable {
 
     void viewGame(){}
     void play(){}
+
+    @Override
+    public void buy() {
+
+    }
+
+    @Override
+    public String toString() {
+        return this.title+", age rating: " + this.ageRating+ " , price: "+ this.price;
+    }
 }

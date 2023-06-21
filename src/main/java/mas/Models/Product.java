@@ -32,7 +32,7 @@ public abstract class Product implements Serializable {
     }
 
     
-    void buy(){}
+    abstract void buy();
     void gift(){}
     void searchStore(){}
     void browseCatalog(){}
