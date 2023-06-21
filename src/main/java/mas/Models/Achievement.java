@@ -31,4 +31,5 @@ public class Achievement implements Serializable {
     void viewAchievements(){} //TODO czy tu nie powinna być metoda klasowa (static)?
     void show(){}
     void hide(){}
+    // TODO where rarity atrybut pochodny?
 }

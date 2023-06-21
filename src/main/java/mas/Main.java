@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Main { //TODO! usunąć powiązania Git!
 
     public static List<Member> userList = new ArrayList<>();
     public static List<Product> productList = new ArrayList<>();

@@ -29,6 +29,7 @@ public class Game extends Product implements Serializable {
     void viewGame(){}
     void play(){}
 
+    // metoda przesłonięta
     @Override
     public void buy(Member member) {
         Transaction.makeTransaction(member, this);

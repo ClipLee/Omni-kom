@@ -20,6 +20,8 @@ public class DLC extends Product implements Serializable{
     void enable(){}
     void disable(){}
 
+    
+    // metoda przesłonięta
     @Override
     void buy(Member member) {
 
