@@ -131,9 +131,7 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 
 14. Ograniczenie bag - pomiędzy Member, a *Product*: klasa Transaction
 
-15. Ograniczenie własne - `ageRating`
-
- 
+15. Ograniczenie własne - `rating {1, 2, 3, 4, 5}`
 
 ## Opis struktury systemu - projektowy diagram klas
 
@@ -174,7 +172,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 10. System zapisuje informacje o transakcji
 11. System dodaje produkt do biblioteki gracza lub desygnowanego znajomego
 12. System pokazuje informację o potwierdzeniu zakupu
-13. Przypadek kończy się 
+13. Przypadek kończy się
 
 ## Diagram aktywności dla przypadku użycia "Kupowanie gry"
 
@@ -230,7 +228,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ![MAS Projekt - Rysunek 7 - Karta produktu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%207%20-%20Karta%20produktu.png)
 
-*Rysunek 7 - Karta produktu* 
+*Rysunek 7 - Karta produktu*
 
 ![Rysunek 7a - Karta produktu z komunikatem.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\GUI%20Mockups\Rysunek%207a%20-%20Karta%20produktu%20z%20komunikatem.png)
 
@@ -250,10 +248,12 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 # Omówienie decyzji projektowych
 
+Program został zrealisowany w języku Java. Wszystkie dane, tak jak i ich przechowywanie jest wykonywane poprzez sam język Java. Interfejs graficzny aplikacji jest wyświetlany za pomocą biblioteki graficznej Swing. Wspomagałem się również biblioteką Project Lombok, który pomógł mi w pisaniu czystego i zwięzłego kodu w szybki i praktyczny sposób.
+
 ## Wybrane technologie
 
 - **Java 17**:
-  Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z przedłużonym wsparciem do 2029 roku.
+  Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z przedłużonym wsparciem do 2029 roku. Jest to istotne, w kwestii zapewnienia trwałości systemu, jego konserwacji i stabilności.
 
 - **Serializacja**:
   Zapewnienie trwałości jest realizowane przy użyciu serializacji języka Java do plików `.dat`, za pomocą interfejsu Serializable.
@@ -272,7 +272,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 - Atrybuty pochodne są wyliczane w momencie ich wywołania
 
-- Asocjacja z atrybutem została zrealizowana z użyciem klasy pośredniczącej i dwóch 
+- Asocjacja z atrybutem została zrealizowana z użyciem klasy pośredniczącej i dwóch
   asocjacji 1..*
 
 - Asocjacje binarne zaimplementowane za pomoca kolekcji
