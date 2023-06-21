@@ -5,6 +5,10 @@ import java.time.LocalDate;
 
 import lombok.Data;
 
+
+/**
+ * Ograniczenie bag, asocjacja z atrybutem
+ */
 @Data
 public class Transaction implements Serializable {
     private int id;

@@ -7,9 +7,16 @@ import java.io.Serializable;
 @Data
 public class Rating implements Serializable {
     private int id;
-    private enum ProductRating {
-        Star_1, Star_2, Star_3, Star_4, Star_5
+    public enum ProductRating {
+        Star_1(1), Star_2(2), Star_3(3), Star_4(4), Star_5(5);
+
+        public final int rating;
+
+        ProductRating(int rating) {
+            this.rating = rating;
+        }
     }
+
     private ProductRating productRating;
     private String title, body;
     private Member author;

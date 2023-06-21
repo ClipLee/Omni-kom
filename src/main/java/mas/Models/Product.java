@@ -6,6 +6,10 @@ import java.util.List;
 
 import lombok.Data;
 
+
+/**
+ * Klasa abstrakcyjna
+ */
 @Data
 public abstract class Product implements Serializable {
     protected int id;
@@ -18,6 +22,7 @@ public abstract class Product implements Serializable {
     protected List<Achievement> achievements;
 
     protected List<Transaction> transactions;
+    protected List<Image> images;
 
     //for Lombok
     public Product(){}
@@ -34,9 +39,13 @@ public abstract class Product implements Serializable {
         this.achievements = achievements;
 
         transactions = new ArrayList<>();
+        images = new ArrayList<>();
     }
 
-    
+    /**
+     *
+     * Metoda przesłonięta
+     */
     abstract void buy(Member member);
     void gift(){}
     void searchStore(){}

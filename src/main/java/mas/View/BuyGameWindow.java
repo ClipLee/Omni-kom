@@ -5,8 +5,6 @@ import mas.Models.Member;
 import mas.Utils;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class BuyGameWindow extends JFrame implements Runnable {
     private JPanel panel;
@@ -25,17 +23,24 @@ public class BuyGameWindow extends JFrame implements Runnable {
         this.member = member;
         this.add(panel);
 
+        loadGameDetails();
+
         this.setVisible(true);
         this.setSize(800, 500);
         this.setLocationRelativeTo(null);
         buyButton.addActionListener(actionEvent -> {
             if (termsCheckBox.isSelected()) {
-                this.game.buy(member);
-                JOptionPane.showMessageDialog(this, "Success, game has been added to your library", "Success!", JOptionPane.INFORMATION_MESSAGE);
-                Utils.closeWindow(this);
+                if (member.getWalletBalance() < game.getPrice())
+                    JOptionPane.showMessageDialog(this, "You don't have enough money", "No money", JOptionPane.WARNING_MESSAGE);
+                else {
+                    this.game.buy(member);
+                    JOptionPane.showMessageDialog(this, "Success, game has been added to your library", "Success!", JOptionPane.INFORMATION_MESSAGE);
+                    Utils.closeWindow(this);
+                }
             } else
                 JOptionPane.showMessageDialog(this, "You need to agree to terms of service", "Warning", JOptionPane.WARNING_MESSAGE);
         });
+        cancelButton.addActionListener(actionEvent -> Utils.closeWindow(this));
     }
 
     private void createUIComponents() {
@@ -46,6 +51,12 @@ public class BuyGameWindow extends JFrame implements Runnable {
             selectedFriend = (Member) source.getSelectedValue();
         });
 
+    }
+
+    private void loadGameDetails() {
+        this.titleLabel.setText(game.getTitle());
+        this.priceLabel.setText(String.valueOf(game.getPrice()));
+        revalidate();
     }
 
     @Override

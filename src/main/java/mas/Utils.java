@@ -1,6 +1,7 @@
 package mas;
 
 import javax.swing.*;
+import java.util.List;
 
 public class Utils {
 
@@ -8,3 +9,4 @@ public class Utils {
         jFrame.dispose();
     }
 }
+

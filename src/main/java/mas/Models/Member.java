@@ -8,6 +8,7 @@ import java.util.List;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import mas.Main;
+import mas.NotUniqueException;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -19,17 +20,53 @@ public class Member extends User implements Serializable {
     private List<Member> friends;
 
     private List<Transaction> transactions;
+    /**
+     * Atrybut opcjonalny
+     */
+    private List<Achieving> achievements;
 
+    /**
+     * Unique
+     */
     public Member(int id, String name, String surname, String email, LocalDate date) {
         super(date);
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.walletBalance = 0.0;
-        this.friends = new ArrayList<>();
 
-        transactions = new ArrayList<>();
+        if (checkForId(id)) try {
+            throw new NotUniqueException();
+        } catch (NotUniqueException e) {
+            System.out.println("Not unique id");
+        }
+        else {
+            this.id = id;
+            this.name = name;
+            this.surname = surname;
+            this.email = email;
+            this.walletBalance = 0.0;
+            this.friends = new ArrayList<>();
+
+            this.transactions = new ArrayList<>();
+            this.achievements = new ArrayList<>();
+        }
+    }
+
+    public Member(Guest guest, int id, String name, String surname, String email, LocalDate date) {
+        super(date);
+        if (checkForId(id)) try {
+            throw new NotUniqueException();
+        } catch (NotUniqueException e) {
+            System.out.println("Not unique id");
+        }
+        else {
+            this.id = id;
+            this.name = name;
+            this.surname = surname;
+            this.email = email;
+            this.walletBalance = 0.0;
+            this.friends = new ArrayList<>();
+
+            this.transactions = new ArrayList<>();
+            this.achievements = new ArrayList<>();
+        }
     }
 
     public static void addNewUser(String name, String surname, String email, String password, LocalDate date) {
@@ -47,5 +84,12 @@ public class Member extends User implements Serializable {
 
     void addFunds(double funds) {
         this.walletBalance += funds;
+    }
+
+    private boolean checkForId(int id) {
+        for (Member m : Main.userList) {
+            if (m.getId() == id) return true;
+        }
+        return false;
     }
 }

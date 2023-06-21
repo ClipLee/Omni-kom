@@ -4,6 +4,10 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+
+/**
+ * Atrybut złożony
+ */
 @Data
 public class Image implements Serializable {
     private int height, width;

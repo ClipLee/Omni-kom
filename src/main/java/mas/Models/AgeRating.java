@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+/**
+ * Ograniczenie własne
+ */
 public enum AgeRating implements Serializable {
     PEGI3(3), PEGI7(7), PEGI12(12), PEGI16(16), PEGI18(18);
 
