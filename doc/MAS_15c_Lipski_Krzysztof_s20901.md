@@ -143,6 +143,12 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Scenariusz przypadku użycia „Kupowanie gry"
 
+|                    |                                    |
+| ------------------ | ---------------------------------- |
+| Aktorzy            | Gracz, Użytkownik                  |
+| Warunek początkowy | W katalogu jest przynajmniej 1 gra |
+| Warunek końcowy    | Gra jest w ekwipunku gracza        |
+
 1. Gracz przegląda katalog serwisu
 2. Gracz przechodzi do widoku wybranej gry
 3. System przeprowadza weryfikację wieku
