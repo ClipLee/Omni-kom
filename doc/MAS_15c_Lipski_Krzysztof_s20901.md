@@ -184,7 +184,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Diagram stanu dla klasy "Gra"
 
-![MAS - Proj_SM_diagram_stanu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%205%20-%20diagram%20aktywności%20dla%20przypadku%20użycia%20Kupowanie%20gry.png)
+![MAS - Proj_SM_diagram_stanu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%205%20-%20diagram%20stanu%20dla%20klasy%20_Game_.png)
 
 *Rysunek 5 - diagram stanu dla przypadku użycia "Kupowanie gry"*
 
@@ -192,11 +192,9 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ### Przebieg domyślny - gracz kupuje grę dla siebie
 
-![MAS - Rysunek 6 - diagram sekwencji da przypadku użycia _Kupowanie gry_.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%206.1%20-%20diagram%20sekwencji.png)
+![MAS - Rysunek 6 - diagram sekwencji da przypadku użycia _Kupowanie gry_.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%206%20-%20diagram%20sekwencji.png)
 
 *Rysunek 6 - diagram sekwencji da przypadku użycia "Kupowanie gry"*
-
-### Przebieg alternatywny - gracz kupuje grę jako prezent
 
 ## Wymagania niefunkcjonalne – miary
 
@@ -254,9 +252,11 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Wybrane technologie
 
-Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z przedłużonym wsparciem do 2029 roku.
+- **Java 17**: 
+  Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z przedłużonym wsparciem do 2029 roku.
 
-- Zapewnienie trwałości jest realizowane przy użyciu serializacji języka Java do plików `.dat`, za pomocą interfejsu Serializable.
+- **Serializacja**:
+  Zapewnienie trwałości jest realizowane przy użyciu serializacji języka Java do plików `.dat`, za pomocą interfejsu Serializable.
   
   - Pliki `.dat` to pliki binarne, zawierające dane zserializowane w formacie binarnym.
   
@@ -264,6 +264,8 @@ Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z prz
   
   - Zapisywanie danych do plików `.dat` odbywa się przy użyciu strumieni wyjściowych.
 
-- GUI zostało zrealizowane za pomocą widget toolkitu Swing.
+- **GUI**
+   Interfejs graficzny (GUI) został zrealizowany za pomocą toolkitu Swing
 
-- Wykorzystana została biblioteka Lombok
+- Do edycji //TODO: czego? Wykorzystana została biblioteka Lombok
+  //
