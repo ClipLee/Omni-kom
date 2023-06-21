@@ -2,6 +2,7 @@ package mas.View;
 
 import mas.Models.Game;
 import mas.Models.Member;
+import mas.Utils;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -40,6 +41,7 @@ public class GameWindow extends JFrame implements Runnable {
             if (terms.isSelected() && i == 0) {
                 this.game.buy(member);
                 JOptionPane.showMessageDialog(this, "Success, game has been added to your library", "Success!", JOptionPane.INFORMATION_MESSAGE);
+                Utils.closeWindow(this);
             } else if (i == 0)
                 JOptionPane.showMessageDialog(this, "You need to agree to terms of service", "Warning", JOptionPane.WARNING_MESSAGE);
         });

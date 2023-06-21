@@ -4,6 +4,7 @@ import mas.Main;
 import mas.Models.Game;
 import mas.Models.Member;
 import mas.Models.Product;
+import mas.Models.Transaction;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -38,12 +39,7 @@ public class MainWindow extends JFrame implements Runnable {
                 System.exit(0);
             }
         });
-        showGameButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                checkAgeAndShow();
-            }
-        });
+        showGameButton.addActionListener(actionEvent -> checkAgeAndShow());
     }
 
     @Override
@@ -65,7 +61,15 @@ public class MainWindow extends JFrame implements Runnable {
             JList source = (JList) e.getSource();
             selectedProduct = (Game) source.getSelectedValue();
             descriptionArea.setText(selectedProduct.getDescription());
+            playGameButton.setEnabled(hasGame());
         });
 
+    }
+
+    private boolean hasGame() {
+        for (Transaction t : member.getTransactions()) {
+            if (selectedProduct.getId() == t.getProduct().getId()) return true;
+        }
+        return false;
     }
 }
