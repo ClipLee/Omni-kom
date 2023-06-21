@@ -4,19 +4,17 @@ import mas.Main;
 import mas.Models.Guest;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class WelcomeWindow extends JFrame implements Runnable{
+public class WelcomeWindow extends JFrame implements Runnable {
 
 
     private JPanel panel;
     private JButton loginButton;
     private JButton registerButton;
 
-    public WelcomeWindow(){
+    public WelcomeWindow() {
         this.add(panel);
 
         Guest guest = new Guest();
@@ -31,7 +29,7 @@ public class WelcomeWindow extends JFrame implements Runnable{
             }
         });
         this.setVisible(true);
-        this.setSize(350,200);
+        this.setSize(350, 200);
         loginButton.addActionListener(actionEvent -> guest.login());
         registerButton.addActionListener(actionEvent -> guest.register());
     }
