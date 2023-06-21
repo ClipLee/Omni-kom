@@ -32,6 +32,7 @@ public class Main {
      * Reads all of the system data from files
      */
     private static void readFromFiles() {
+        boolean b = false;
         try (FileInputStream fis = new FileInputStream("MemberData.dat");
                 ObjectInputStream ois = new ObjectInputStream(fis)) {
             userList = (List<Member>) ois.readObject();
@@ -40,6 +41,7 @@ public class Main {
             userList.add(new Member(0, "test", "user", "testuser@example.com", LocalDate.of(2001, 12, 3)));
             userList.add(new Member(1, "younger", "user", "testuser@example.com", LocalDate.of(2008, 1, 5)));
             userList.get(1).getFriends().add(userList.get(0));
+            b=true;
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -71,8 +73,14 @@ public class Main {
                     new ArrayList<>(),
                     new ArrayList<>()));
 
+            b=true;
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
+        }
+
+        if (b) {
+            writeToFiles();
+            System.exit(1);
         }
     }
 
