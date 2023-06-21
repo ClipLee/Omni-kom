@@ -85,7 +85,7 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 - Utwórz nowe konto (Gość)
 - Zaloguj się (Gość)
 
-![](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%201%20-%20diagram%20przypadków%20użycia.png)
+![](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagrams\Rysunek%201%20-%20diagram%20przypadków%20użycia.png)
 
 *Rysunek 1 - diagram przypadków użycia*
 
@@ -93,9 +93,9 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 
 ## Wymagania funkcjonalne - analityczny diagram klas
 
-<img title="" src="file:///C:/Users/klips/Documents/PJATK/6 - Letni/MAS/Omni-kom/doc/Diagramy/Rysunek 2.1 - analityczny diagram klas oznaczony.png" alt="" data-align="inline"> 
+<img title="" src="file:///C:/Users/klips/Documents/PJATK/6 - Letni/MAS/Omni-kom/doc/Diagrams/Rysunek 2.1 - analityczny diagram klas oznaczony.png" alt="" data-align="inline"> 
 
-*Rysunek 2 - analityczny diagram klas*
+*Rysunek 2.1 - analityczny diagram klas*
 
 #### Legenda
 
@@ -135,7 +135,7 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 
 ## Opis struktury systemu - projektowy diagram klas
 
-![MAS - Proj_CLD_projektowy.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%203%20-%20projektowy%20diagram%20klas.png)
+![MAS - Proj_CLD_projektowy.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagrams\Rysunek%203%20-%20projektowy%20diagram%20klas.png)
 
 *Rysunek 3 - projektowy diagram klas*
 
@@ -182,13 +182,13 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Diagram aktywności dla przypadku użycia "Kupowanie gry"
 
-![MAS - Proj_UD_diagram_aktywnosci.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%204%20-%20diagram%20aktywności%20dla%20przypadku%20użycia%20_Kupowanie%20gry_.png)
+![MAS - Proj_UD_diagram_aktywnosci.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagrams\Rysunek%204%20-%20diagram%20aktywności%20dla%20przypadku%20użycia%20_Kupowanie%20gry_.png)
 
 *Rysunek 4 - diagram aktywności dla przypadku użycia "Kupowanie gry"*
 
 ## Diagram stanu dla klasy "Gra"
 
-![MAS - Proj_SM_diagram_stanu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%205%20-%20diagram%20stanu%20dla%20klasy%20_Game_.png)
+![MAS - Proj_SM_diagram_stanu.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagrams\Rysunek%205%20-%20diagram%20stanu%20dla%20klasy%20_Game_.png)
 
 *Rysunek 5 - diagram stanu dla przypadku użycia "Kupowanie gry"*
 
@@ -196,19 +196,19 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ### Przebieg domyślny - gracz kupuje grę dla siebie
 
-![MAS - Rysunek 6 - diagram sekwencji da przypadku użycia _Kupowanie gry_.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%206%20-%20diagram%20sekwencji.png)
+![MAS - Rysunek 6 - diagram sekwencji da przypadku użycia _Kupowanie gry_.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagrams\Rysunek%206%20-%20diagram%20sekwencji.png)
 
 *Rysunek 6 - diagram sekwencji da przypadku użycia "Kupowanie gry"*
 
 ## Wymagania niefunkcjonalne – miary
 
-| **Ograniczenie**        | **Miara**                                                                                                                                                                                                                                                             |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Wydajność**           | Ekrany ładują się w czasie mniejszym niż 3 sekundy, przetwarzanie zakupów i płatności trwa mniej niż 5 sekund (nie wliczając czasu pośredników). Obsługa 400 żądań na sekundę bez kolejki dłuższej niż 50.                                                            |
-| **Bezpieczeństwo**      | Zapewnienie bezpieczeństwa użytkowników i ich danych poprzez rozlokwanie ich na kilku serwerach (min. 3) z szyfrowaniem ich za pomocą SHA-256 lub mocniejszego.<br/>Utrzymywanie zaktualizwaonego systemu i elementów w nim zawartych. (Maksymalnie 1 wersja do tyłu) |
-| **Łatwość użytkowania** | Intuicyjny interfejs zapewniający łatwą dostępność do wszystkich funkcji. Kompatybilność z funkcjami text-to-speech w przeglądarkach. Aktualne FAQ odpowiadające na często zadawane pytania. 7/10 zadowolonych użytkowników.                                          |
-| **Dostępność**          | Dostępność platformy dla użytkowników z całej Europy w 5 językach (polski, angielski, niemiecki, ukraiński, francuski). Dostępność serwisu 24 godziny na dobę, przez 7 dni w tygodniu w ciągu całego roku (Nie licząc przerw serwisowych).                            |
-| **Skalowalność**        | Zdolność platformy do obsługi rosnącej liczby użytkowników, możliwość przechowywania danych ponad 1 miliona użytkowników. Biblioteka gier będąca w stanie przechowywać ponad 50 000 tytułów gier.                                                                     |
+| **Ograniczenie**        | **Miara**                                                                                                                                                                                                                                                              |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Wydajność**           | Ekrany ładują się w czasie mniejszym niż 3 sekundy, przetwarzanie zakupów i płatności trwa mniej niż 5 sekund (nie wliczając czasu pośredników). Obsługa 400 żądań na sekundę bez kolejki dłuższej niż 50.                                                             |
+| **Bezpieczeństwo**      | Zapewnienie bezpieczeństwa użytkowników i ich danych poprzez rozlokowanie ich na kilku serwerach (min. 3) z szyfrowaniem ich za pomocą SHA-256 lub mocniejszego.<br/>Utrzymywanie zaktualizowanego systemu i elementów w nim zawartych. (Maksymalnie 1 wersja do tyłu) |
+| **Łatwość użytkowania** | Intuicyjny interfejs zapewniający łatwą dostępność do wszystkich funkcji. Kompatybilność z funkcjami text-to-speech w przeglądarkach. Aktualne FAQ odpowiadające na często zadawane pytania. 7/10 zadowolonych użytkowników.                                           |
+| **Dostępność**          | Dostępność platformy dla użytkowników z całej Europy w 5 językach (polski, angielski, niemiecki, ukraiński, francuski). Dostępność serwisu 24 godziny na dobę, przez 7 dni w tygodniu w ciągu całego roku (Nie licząc przerw serwisowych).                             |
+| **Skalowalność**        | Zdolność platformy do obsługi rosnącej liczby użytkowników, możliwość przechowywania danych ponad 1 miliona użytkowników. Biblioteka gier będąca w stanie przechowywać ponad 50 000 tytułów gier.                                                                      |
 
 # Opis przyszłej ewolucji systemu
 
@@ -254,7 +254,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 # Omówienie decyzji projektowych
 
-Program został zrealisowany w języku Java. Wszystkie dane, tak jak i ich przechowywanie jest wykonywane poprzez sam język Java. Interfejs graficzny aplikacji jest wyświetlany za pomocą biblioteki graficznej Swing. Wspomagałem się również biblioteką Project Lombok, który pomógł mi w pisaniu czystego i zwięzłego kodu w szybki i praktyczny sposób.
+Program został zrealizowany w języku Java. Wszystkie dane, tak jak i ich przechowywanie jest wykonywane poprzez sam język Java. Interfejs graficzny aplikacji jest wyświetlany za pomocą biblioteki graficznej Swing. Wspomagałem się również biblioteką Project Lombok, który pomógł mi w pisaniu czystego i zwięzłego kodu w szybki i praktyczny sposób.
 
 ## Wybrane technologie
 
@@ -274,14 +274,14 @@ Program został zrealisowany w języku Java. Wszystkie dane, tak jak i ich przec
    Interfejs graficzny (GUI) został zrealizowany za pomocą toolkitu Swing
 
 - **Lombok**:
-  Do obługi metod dostępu do atrybutów get, set, toString została wykorzystana została biblioteka Lombok
+  Do obsługi metod dostępu do atrybutów get, set, toString została wykorzystana została biblioteka Lombok
 
 - Atrybuty pochodne są wyliczane w momencie ich wywołania
 
 - Asocjacja z atrybutem została zrealizowana z użyciem klasy pośredniczącej i dwóch
   asocjacji 1..*
 
-- Asocjacje binarne zaimplementowane za pomoca kolekcji
+- Asocjacje binarne zaimplementowane za pomocą kolekcji
 
 - Ograniczenie własne zrealizowane za pomocą enumów
 
