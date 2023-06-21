@@ -2,10 +2,12 @@ package mas.View;
 
 import mas.Main;
 import mas.Models.Member;
+import mas.Utils;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.LocalDate;
 import java.util.Arrays;
 
 public class RegisterWindow extends JFrame implements Runnable{
@@ -21,30 +23,15 @@ public class RegisterWindow extends JFrame implements Runnable{
         this.add(panel);
         this.setVisible(true);
         this.setSize(350,200);
-        submitButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                registerNewUser();
-            }
-        });
-        cancelButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                closeWindow();
-            }
-        });
+        submitButton.addActionListener(actionEvent -> registerNewUser());
+        cancelButton.addActionListener(actionEvent -> Utils.closeWindow(this));
     }
 
 
     void registerNewUser(){
-        Member.addNewUser(this.nameField.getText(), this.surnameField.getText(), this.emailField.getText(), Arrays.toString(this.passwordField1.getPassword()));
+        Member.addNewUser(this.nameField.getText(), this.surnameField.getText(), this.emailField.getText(), Arrays.toString(this.passwordField1.getPassword()), LocalDate.of(1998, 3, 5));
         JOptionPane.showMessageDialog(this, "New user created", "New user", JOptionPane.INFORMATION_MESSAGE);
-        closeWindow();
-    }
-
-
-    void closeWindow(){
-        this.dispose();
+        Utils.closeWindow(this);
     }
 
     @Override

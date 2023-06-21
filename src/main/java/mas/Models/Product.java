@@ -1,6 +1,7 @@
 package mas.Models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Data;
@@ -16,6 +17,8 @@ public abstract class Product implements Serializable {
     protected List<Image> screenShots;
     protected List<Achievement> achievements;
 
+    protected List<Transaction> transactions;
+
     //for Lombok
     public Product(){}
 
@@ -29,10 +32,12 @@ public abstract class Product implements Serializable {
         this.tags = tags;
         this.screenShots = screenShots;
         this.achievements = achievements;
+
+        transactions = new ArrayList<>();
     }
 
     
-    void buy(){}
+    abstract void buy(Member member);
     void gift(){}
     void searchStore(){}
     void browseCatalog(){}
