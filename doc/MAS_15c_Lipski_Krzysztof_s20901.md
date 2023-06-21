@@ -252,7 +252,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Wybrane technologie
 
-- **Java 17**: 
+- **Java 17**:
   Językiem programowania jest Java 17 oferująca wsparcie aż do 2026 roku, z przedłużonym wsparciem do 2029 roku.
 
 - **Serializacja**:
@@ -268,4 +268,3 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
    Interfejs graficzny (GUI) został zrealizowany za pomocą toolkitu Swing
 
 - Do edycji //TODO: czego? Wykorzystana została biblioteka Lombok
-  //
