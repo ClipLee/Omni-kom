@@ -1,168 +1,166 @@
 {
-    "student": {
-      "name": "Krzysztof",
-      "sNumber": "s20901"
-    },
-    "project": {
-      "description": "Projekt portalu z grami został wymyślony przez grupę znajomych, chcących umożliwić sobie i graczom większej interakcji między sobą w kwestii grania oraz możliwość posiadania biblioteki gier, gdzie będą mogli śledzić postępy.",
-      "languages": [
-        "Java",
-        "Spring"
-      ],
-      "projectPoints": [
-        "Ekstensja",
-        "Trwałość ekstensji",
-        "Atrybut pochodny",
-        "Metoda klasowa",
-        "Kompozycja",
-        "Klasa abstrakcyjna",
-        "Dynamiczne dziedziczenie",
-        "Ograniczenie atrybutu",
-        "Ograniczenie unique",
-        "Ograniczenie ordered",
-        "Ograniczenie własne",
-        "Klasy modelu relacyjnego",
-        "Asocjacje modelu relacyjnego",
-        "Dziedziczenie modelu relacyjnego"
-      ],
-      "persistenceType": "Plik"
-    },
-    "scenario": {
-      "useCaseName": "Kupowanie gry",
-      "initialCondition": "User decides to buy a game",
-      "endCondition": "Gra znajduje się w bibliotece gracza",
-      "actors": [
-        "User",
-        "Member",
-        "Guest"
-      ],
-      "mainScenario": [
-        {
-          "pointNumber": "1",
-          "pointContent": "- Gracz przegląda katalog serwisu"
-        },
-        {
-          "pointNumber": "2",
-          "pointContent": "- Gracz przechodzi do widoku wybranej gry"
-        },
-        {
-          "pointNumber": "3",
-          "pointContent": "System przeprowadza weryfikację wieku"
-        },
-        {
-          "pointNumber": "3.1",
-          "pointContent": "Wiek gracza nie pozwala na wyświetlenie gry"
-        },
-        {
-          "pointNumber": "3.1.1",
-          "pointContent": "- System wyświetla informację grze dla starszych osób"
-        },
-        {
-          "pointNumber": "3.1.2",
-          "pointContent": "Powrót do punktu 1."
-        },
-        {
-          "pointNumber": "4",
-          "pointContent": "Gracz jest przenoszony do widoku produktu"
-        },
-        {
-          "pointNumber": "5",
-          "pointContent": "- Gracz wybiera opcję zakupu, poprzez wciśnięcie przyciska „Kup\""
-        },
-        {
-          "pointNumber": "6",
-          "pointContent": "System sprawdza, czy gracz chce kupić grę dla siebie, czy jako prezent"
-        },
-        {
-          "pointNumber": "6.1",
-          "pointContent": "Gracz wybiera opcję zakupu „jako prezent\""
-        },
-        {
-          "pointNumber": "6.1.1",
-          "pointContent": "- Gracz wyznacza znajomego z serwisu, który otrzyma grę"
-        },
-        {
-          "pointNumber": "6.1.2",
-          "pointContent": "- System przeprowadza weryfikację wieku"
-        },
-        {
-          "pointNumber": "6.1.3",
-          "pointContent": "Docelowy znajomy jest zbyt młody"
-        },
-        {
-          "pointNumber": "6.1.3.1",
-          "pointContent": "System wyświetla informację o grze dla starszych osób"
-        },
-        {
-          "pointNumber": "6.1.3.2",
-          "pointContent": "- 1. Powrót do punktu 4."
-        },
-        {
-          "pointNumber": "6.1.4",
-          "pointContent": "- 1. Przejście do punktu 7."
-        },
-        {
-          "pointNumber": "6.2",
-          "pointContent": "Gracz wybiera opcję zakupu „dla siebie\""
-        },
-        {
-          "pointNumber": "6.2.1",
-          "pointContent": "- System przeprowadza weryfikację wieku"
-        },
-        {
-          "pointNumber": "6.2.2",
-          "pointContent": "W bibliotece gracza znajduje się już ten produkt."
-        },
-        {
-          "pointNumber": "6.2.2.1",
-          "pointContent": "- System informuje gracza o posiadaniu już wybranego produktu"
-        },
-        {
-          "pointNumber": "6.2.2.2",
-          "pointContent": "- 1. 1. 1. Powrót do punktu 4."
-        },
-        {
-          "pointNumber": "7",
-          "pointContent": "- Gracz potwierdza zamówienie"
-        },
-        {
-          "pointNumber": "8",
-          "pointContent": "System sprawdza, czy saldo przypisanego do konta portfela pozwala na dokonanie zakupu"
-        },
-        {
-          "pointNumber": "8.1",
-          "pointContent": "Gracz ma za małą ilość funduszy"
-        },
-        {
-          "pointNumber": "8.1.1",
-          "pointContent": "System wyświetla informację o braku środków"
-        },
-        {
-          "pointNumber": "9",
-          "pointContent": "- System odejmuje określoną kwotę z portfela gracza"
-        },
-        {
-          "pointNumber": "10",
-          "pointContent": "- System zapisuje informacje o transakcji"
-        },
-        {
-          "pointNumber": "11",
-          "pointContent": "System dodaje produkt do biblioteki gracza lub desygnowanego znajomego"
-        },
-        {
-          "pointNumber": "12",
-          "pointContent": "- System pokazuje informację o potwierdzeniu zakupu"
-        },
-        {
-          "pointNumber": "13",
-          "pointContent": "Przypadek kończy się"
-        }
-      ],
-      "alternativeScenario": [
-        {
-          "pointNumber": "1",
-          "pointContent": "Gracz kupuje produkt jako prezent"
-        }
-      ]
-    }
+  "student": {
+    "name": "Krzysztof Lipski",
+    "sNumber": "s20901"
+  },
+  "project": {
+    "description": "Projekt portalu z grami został wymyślony przez grupę znajomych, chcących umożliwić sobie i graczom większej interakcji między sobą w kwestii grania oraz możliwość posiadania biblioteki gier, gdzie będą mogli śledzić postępy.",
+    "languages": [
+      "Java",
+      "Swing"
+    ],
+    "projectPoints": [
+      "Ekstensja",
+      "Trwałość ekstensji",
+      "Atrybut złożony",
+      "Atrybut opcjonalny",
+      "Atrybut klasowy",
+      "Atrybut pochodny",
+      "Metoda klasowa",
+      "Metoda przeciążona lub przesłonięta",
+      "Asocjacja binarna",
+      "Asocjacja z atrybutem",
+      "Kompozycja",
+      "Klasa abstrakcyjna",
+      "Dynamiczne dziedziczenie",
+      "Ograniczenie atrybutu",
+      "Ograniczenie unique",
+      "Ograniczenie ordered",
+      "Ograniczenie bag",
+      "Ograniczenie własne"
+    ],
+    "persistenceType": "Plik"
+  },
+  "scenario": {
+    "useCaseName": "Kupowanie gry",
+    "initialCondition": "W katalogu jest przynajmniej 1 gra",
+    "endCondition": "Gra jest w ekwipunku gracza",
+    "actors": [
+      "Gracz, Użytkownik"
+    ],
+    "mainScenario": [
+      {
+        "pointNumber": "1",
+        "pointContent": "Gracz przegląda katalog serwisu"
+      },
+      {
+        "pointNumber": "2",
+        "pointContent": "Gracz przechodzi do widoku wybranej gry"
+      },
+      {
+        "pointNumber": "3",
+        "pointContent": "System przeprowadza weryfikację wieku"
+      },
+      {
+        "pointNumber": "3.1",
+        "pointContent": "Wiek gracza nie pozwala na wyświetlenie gry"
+      },
+      {
+        "pointNumber": "3.1.1",
+        "pointContent": "System wyświetla informację grze dla starszych osób"
+      },
+      {
+        "pointNumber": "3.1.2",
+        "pointContent": "Powrót do punktu 1."
+      },
+      {
+        "pointNumber": "4",
+        "pointContent": "Gracz jest przenoszony do widoku produktu"
+      },
+      {
+        "pointNumber": "5",
+        "pointContent": "- Gracz wybiera opcję zakupu, poprzez wciśnięcie przyciska „Kup\""
+      },
+      {
+        "pointNumber": "6",
+        "pointContent": "System sprawdza, czy gracz chce kupić grę dla siebie, czy jako prezent"
+      },
+      {
+        "pointNumber": "6.1",
+        "pointContent": "Gracz wybiera opcję zakupu „jako prezent\""
+      },
+      {
+        "pointNumber": "6.1.1",
+        "pointContent": "- Gracz wyznacza znajomego z serwisu, który otrzyma grę"
+      },
+      {
+        "pointNumber": "6.1.2",
+        "pointContent": "- System przeprowadza weryfikację wieku"
+      },
+      {
+        "pointNumber": "6.1.3",
+        "pointContent": "Docelowy znajomy jest zbyt młody"
+      },
+      {
+        "pointNumber": "6.1.3.1",
+        "pointContent": "- System wyświetla informację o grze dla starszych osób"
+      },
+      {
+        "pointNumber": "6.1.3.2",
+        "pointContent": "- 1. Powrót do punktu 4."
+      },
+      {
+        "pointNumber": "6.1.4",
+        "pointContent": "Przejście do punktu 7."
+      },
+      {
+        "pointNumber": "6.2",
+        "pointContent": "Gracz wybiera opcję zakupu „dla siebie\""
+      },
+      {
+        "pointNumber": "6.2.1",
+        "pointContent": "System przeprowadza weryfikację wieku"
+      },
+      {
+        "pointNumber": "6.2.2",
+        "pointContent": "W bibliotece gracza znajduje się już ten produkt"
+      },
+      {
+        "pointNumber": "6.2.2.1",
+        "pointContent": "System informuje gracza o posiadaniu już wybranego produktu"
+      },
+      {
+        "pointNumber": "6.2.2.2",
+        "pointContent": "- 1. 1. 1. Powrót do punktu 4."
+      },
+      {
+        "pointNumber": "7",
+        "pointContent": "Gracz potwierdza zamówienie"
+      },
+      {
+        "pointNumber": "8",
+        "pointContent": "System sprawdza, czy saldo przypisanego do konta portfela pozwala na dokonanie zakupu"
+      },
+      {
+        "pointNumber": "8.1",
+        "pointContent": "Gracz ma za małą ilość funduszy"
+      },
+      {
+        "pointNumber": "8.1.1",
+        "pointContent": "System wyświetla informację o braku środków"
+      },
+      {
+        "pointNumber": "9",
+        "pointContent": "System odejmuje określoną kwotę z portfela gracza"
+      },
+      {
+        "pointNumber": "10",
+        "pointContent": "- System zapisuje informacje o transakcji"
+      },
+      {
+        "pointNumber": "11",
+        "pointContent": "System dodaje produkt do biblioteki gracza lub desygnowanego znajomego"
+      },
+      {
+        "pointNumber": "12",
+        "pointContent": "System pokazuje informację o potwierdzeniu zakupu"
+      }
+    ],
+    "alternativeScenario": [
+      {
+        "pointNumber": "1",
+        "pointContent": "alternative"
+      }
+    ]
   }
+}
