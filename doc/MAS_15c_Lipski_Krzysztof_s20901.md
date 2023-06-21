@@ -99,7 +99,7 @@ System ma umożliwiać potencjalnym użytkownikom m.in. w realizowanie zadań, k
 
 #### Legenda
 
-1. Atrybut złożony - w implementacji typu `Image` 
+1. Atrybut złożony - w implementacji typu `Image`
 
 2. Atrybut opcjonalny - `friends: [0..*]`; `achievements [0..*]`
 
@@ -176,7 +176,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
 
 ## Diagram aktywności dla przypadku użycia "Kupowanie gry"
 
-![MAS - Proj_UD_diagram_aktywnosci.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%204%20-%20diagram%20aktywności%20dla%20przypadku%20użycia%20Kupowanie%20gry.png)
+![MAS - Proj_UD_diagram_aktywnosci.png](C:\Users\klips\Documents\PJATK\6%20-%20Letni\MAS\Omni-kom\doc\Diagramy\Rysunek%204%20-%20diagram%20aktywności%20dla%20przypadku%20użycia%20_Kupowanie%20gry_.png)
 
 *Rysunek 4 - diagram aktywności dla przypadku użycia "Kupowanie gry"*
 
