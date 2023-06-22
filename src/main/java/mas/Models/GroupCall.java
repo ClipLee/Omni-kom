@@ -30,7 +30,7 @@ public class GroupCall implements Serializable {
             System.out.println("You can't add any more members");
         }else {
             this.members.add(member);
-            members.add(member);
+            this.membersOrder.put(members.toArray().length, member);
         }
     }
     
