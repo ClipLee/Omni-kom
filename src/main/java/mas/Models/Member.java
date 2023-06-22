@@ -92,4 +92,10 @@ public class Member extends User implements Serializable {
         }
         return false;
     }
+
+
+    @Override
+    public String toString() {
+        return name+" "+surname;
+    }
 }
