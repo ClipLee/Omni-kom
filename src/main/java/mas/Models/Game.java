@@ -33,6 +33,7 @@ public class Game extends Product implements Serializable {
     @Override
     public void buy(Member member) {
         Transaction.makeTransaction(member, this);
+        member.setWalletBalance(member.getWalletBalance()-this.getPrice());
     }
 
     @Override
