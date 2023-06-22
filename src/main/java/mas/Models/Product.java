@@ -50,7 +50,6 @@ public abstract class Product implements Serializable {
     void gift(){}
     void searchStore(){}
     void browseCatalog(){}
-    void viewCatalog(){} 
-    //TODO czy tu nie powinno być viewLibrary()?
+    void viewLibrary(){}
     
 }
