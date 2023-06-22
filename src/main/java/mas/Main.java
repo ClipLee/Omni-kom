@@ -42,6 +42,8 @@ public class Main { //TODO! usunąć powiązania Git!
             userList.add(new Member(1, "younger", "user", "testuser@example.com", LocalDate.of(2008, 1, 5)));
             userList.add(new Member(2, "1999", "user", "testuser@example.com", LocalDate.of(1999, 2, 23)));
             userList.get(1).getFriends().add(userList.get(0));
+            userList.get(1).setWalletBalance(200.0);
+            userList.get(2).setWalletBalance(110.0);
             b = true;
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
