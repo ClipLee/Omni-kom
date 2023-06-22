@@ -1,6 +1,7 @@
 package mas.Models;
 
 import lombok.Data;
+import mas.Main;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -27,9 +28,31 @@ public class Achievement implements Serializable {
         achievings = new ArrayList<>();
     }
 
-    void countRarity(){} //TODO czy tu nie powinna być metoda klasowa (static)?
-    void viewAchievements(){} //TODO czy tu nie powinna być metoda klasowa (static)?
-    void show(){}
-    void hide(){}
-    // TODO where rarity atrybut pochodny?
+    public static void countRarity(Achievement achievement) {
+        int hasGame = 0;
+        int hasAchieved = 0;
+        for (Member m : Main.userList) {
+            for (Transaction t : m.getTransactions()) {
+                if (t.getProduct().getId() == achievement.getProduct().getId()) {
+                    hasGame++;
+                    for (Achieving a : m.getAchievements()) {
+                        if (a.getAchievement().getId() == achievement.getId()){
+                            hasAchieved++;
+                        }
+                    }
+                }
+            }
+            achievement.setRarity((double) hasAchieved / hasGame);
+        }
+    }
+
+    public static void viewAchievements() {
+        Main.achievementList.forEach(System.out::println);
+    }
+
+    void show() {
+    }
+
+    void hide() {
+    }
 }
