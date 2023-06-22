@@ -30,7 +30,10 @@ public class BuyGameWindow extends JFrame implements Runnable {
         this.setLocationRelativeTo(null);
         buyButton.addActionListener(actionEvent -> {
             if (termsCheckBox.isSelected()) {
-                if (member.getWalletBalance() < game.getPrice())
+                if (selectedFriend.getAge() < game.getAgeRating().i) {
+                    JOptionPane.showMessageDialog(this, "Unfortunately, the user is too young to view this game.");
+                }
+                else if (member.getWalletBalance() < game.getPrice())
                     JOptionPane.showMessageDialog(this, "You don't have enough money", "No money", JOptionPane.WARNING_MESSAGE);
                 else {
                     this.game.buy(member);
