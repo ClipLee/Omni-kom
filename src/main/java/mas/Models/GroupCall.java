@@ -11,6 +11,10 @@ public class GroupCall implements Serializable {
     private int id;
     private List<Member> members;
     private Map<Integer, Member> membersOrder;
+
+    private int order =0;
+
+
     /**
      * atrybut klasowy
      */
@@ -30,7 +34,8 @@ public class GroupCall implements Serializable {
             System.out.println("You can't add any more members");
         }else {
             this.members.add(member);
-            this.membersOrder.put(members.toArray().length, member);
+            this.membersOrder.put(order, member);
+            order++;
         }
     }
     
