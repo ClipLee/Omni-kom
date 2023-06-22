@@ -4,9 +4,13 @@ import mas.Models.Game;
 import mas.Models.Member;
 import mas.Utils;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class GameWindow extends JFrame implements Runnable {
     private JPanel mainPanel;
@@ -19,6 +23,7 @@ public class GameWindow extends JFrame implements Runnable {
     private JLabel ageRatingLabel;
     private JLabel categoryLabel;
     private JLabel priceLabel;
+    private JLabel coverImage;
 
     private final Game game;
     private final Member member;
@@ -60,12 +65,15 @@ public class GameWindow extends JFrame implements Runnable {
         });
     }
 
-    private void createUIComponents() {
+    private void createUIComponents() throws IOException {
         this.titleField = new JLabel();
         this.ageRatingLabel = new JLabel();
         this.descriptionArea = new JTextArea();
         this.categoryLabel = new JLabel();
         this.priceLabel = new JLabel();
+
+        BufferedImage cover = ImageIO.read(new File("Images/cover.jpg"));
+        this.coverImage = new JLabel(new ImageIcon(cover));
     }
 
     private void loadGameDetails() {
@@ -74,6 +82,7 @@ public class GameWindow extends JFrame implements Runnable {
         this.descriptionArea.setText(game.getDescription());
         this.categoryLabel.setText(game.getGenres().toString());
         this.priceLabel.setText(String.valueOf(game.getPrice()));
+        this.coverImage.setText("");
         revalidate();
     }
 
