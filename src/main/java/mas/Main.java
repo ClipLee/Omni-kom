@@ -122,7 +122,7 @@ public class Main { //TODO! usunąć powiązania Git!
         } catch (FileNotFoundException e) {
             System.out.println("No previous image data, creating new test image.");
             imageList.add(new Image(300, 300, "jpeg", "../Images/image.jpg"));
-            productList.get(0).getImages().add(imageList.get(0));
+            productList.get(0).getScreenShots().add(imageList.get(0));
             b = true;
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);

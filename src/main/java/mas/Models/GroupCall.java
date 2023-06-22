@@ -11,6 +11,9 @@ public class GroupCall implements Serializable {
     private int id;
     private List<Member> members;
     private Map<Integer, Member> membersOrder;
+    /**
+     * atrybut klasowy
+     */
     public static final int maxMembers = 49;
 
     public GroupCall(int id, List<Member> members) {

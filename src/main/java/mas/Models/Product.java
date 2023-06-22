@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Data;
+import mas.Main;
 
 
 /**
@@ -22,7 +23,6 @@ public abstract class Product implements Serializable {
     protected List<Achievement> achievements;
 
     protected List<Transaction> transactions;
-    protected List<Image> images;
 
     //for Lombok
     public Product(){}
@@ -39,7 +39,6 @@ public abstract class Product implements Serializable {
         this.achievements = achievements;
 
         transactions = new ArrayList<>();
-        images = new ArrayList<>();
     }
 
     /**
@@ -50,6 +49,8 @@ public abstract class Product implements Serializable {
     void gift(){}
     void searchStore(){}
     void browseCatalog(){}
-    public static void viewLibrary(){}
+    public static void viewLibrary(){
+        Main.productList.forEach(System.out::println);
+    }
     
 }
