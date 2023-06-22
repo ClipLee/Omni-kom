@@ -50,6 +50,6 @@ public abstract class Product implements Serializable {
     void gift(){}
     void searchStore(){}
     void browseCatalog(){}
-    void viewLibrary(){}
+    public static void viewLibrary(){}
     
 }
