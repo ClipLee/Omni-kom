@@ -88,6 +88,12 @@ public class Main { //TODO! usunąć powiązania Git!
             genresList.add(new Genre(1, "RPG"));
             genresList.add(new Genre(2, "Platformer"));
             genresList.add(new Genre(3, "Strategy"));
+            Game game1 = (Game) productList.get(0);
+            game1.getGenres().add(genresList.get(0));
+            Game game2 = (Game) productList.get(1);
+            game2.getGenres().add(genresList.get(2));
+            Game game3 = (Game) productList.get(2);
+            game3.getGenres().add(genresList.get(1));
             b = true;
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
