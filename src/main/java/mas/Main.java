@@ -177,35 +177,35 @@ public class Main {
 
         try (FileOutputStream fos = new FileOutputStream("Data/GenreData.dat")) {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(productList);
+            oos.writeObject(genresList);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
         try (FileOutputStream fos = new FileOutputStream("Data/RatingData.dat")) {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(productList);
+            oos.writeObject(ratingsList);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
         try (FileOutputStream fos = new FileOutputStream("Data/AchievementData.dat")) {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(productList);
+            oos.writeObject(achievementList);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
         try (FileOutputStream fos = new FileOutputStream("Data/ImageData.dat")) {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(productList);
+            oos.writeObject(imageList);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
         try (FileOutputStream fos = new FileOutputStream("Data/ChatData.dat")) {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(productList);
+            oos.writeObject(chatList);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
