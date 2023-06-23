@@ -164,7 +164,7 @@ Zmiany względem diagramu analitycznego oznaczone są kolorem.
          1. Docelowy znajomy jest zbyt młody
             1. System wyświetla informację o grze dla starszych osób
             2. Powrót do punktu 4.
-      4. Przejście do punktu 7.
+      3. Przejście do punktu 7.
    2. Gracz wybiera opcję zakupu „dla siebie"
       1. System przeprowadza weryfikację wieku
       2. W bibliotece gracza znajduje się już ten produkt.
